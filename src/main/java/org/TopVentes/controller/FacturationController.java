@@ -6,29 +6,34 @@ import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.stage.Stage;
-import org.TopVentes.model.Facturation;
-
-import java.awt.desktop.AppEvent;
+import javafx.util.Callback;
+import org.TopVentes.model.*;
 
 public class FacturationController extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setTitle("Facturation");
-       // Facturation facturation1 = new Facturation();
+        Vendeur vendeur = new Vendeur();
+        Facturation facturation1 = new Facturation(vendeur, new Acheteur(), new Transaction());
 
         TabPane root = new TabPane();
-
+        Tab tabOfFacturation = new Tab();
+        tabOfFacturation.setText("Facturation 1");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/Facturation.fxml"));
-
-        Tab tabOfFacture1 = new Tab();
-        tabOfFacture1.setText("Facture 1");
-        tabOfFacture1.setContent(fxmlLoader.load());
+        fxmlLoader.setControllerFactory(new Callback<Class<?>, Object>() {
+            @Override
+            public Object call(Class<?> param) {
+                FacturationGraphicalController facturationGraphicalController = new FacturationGraphicalController(facturation1);
+                return facturationGraphicalController;
+            }
+        });
+        tabOfFacturation.setContent(fxmlLoader.load());
+        root.getTabs().add(tabOfFacturation);
 
         Scene scene = new Scene(root, 800, 800);
         primaryStage.setScene(scene);
         primaryStage.show();
-
     }
 
     public static void main(String[] args) {
