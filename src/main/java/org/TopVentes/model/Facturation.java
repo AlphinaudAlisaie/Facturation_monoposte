@@ -1,16 +1,18 @@
 package org.TopVentes.model;
 
 public final class Facturation {
-
     public Vendeur vendeur;
     public Acheteur acheteur;
-    public Transaction transaction;
-    private int numeroFacture;
+    public Transaction transsaction;
+    public int numeroFacture;
 
-    public Facturation(Vendeur vendeur, Acheteur acheteur, Transaction transaction) {
-        this.vendeur = vendeur;
-        this.acheteur = acheteur;
-        this.transaction = transaction;
+    public Facturation(Vendeur pVendeur, Acheteur pAcheteur, Transaction pTransaction) {
+        this.vendeur = pVendeur;
+        this.acheteur = pAcheteur;
+        this.transsaction = pTransaction;
         numeroFacture++;
+    }
+
+    public Facturation() {
     }
 }
