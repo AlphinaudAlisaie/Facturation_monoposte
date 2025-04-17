@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="update component dans workspace .idea">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FacturationApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/controller/FacturationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/controller/FacturationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/controller/FacturationGraphicalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/controller/FacturationGraphicalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Acheteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Acheteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Facturation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Facturation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Vendeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Vendeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Facturation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Facturation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Facture.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Facturation.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.FacturationController.executor": "Debug",
+    "Application.FacturationController.executor": "Run",
     "OverrideImplement.generate.javadoc": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -103,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744724173613</updated>
       <workItem from="1744724174683" duration="3953000" />
-      <workItem from="1744892018457" duration="7722000" />
+      <workItem from="1744892018457" duration="7925000" />
     </task>
     <task id="LOCAL-00001" summary="ajout constructeur et attributs">
       <option name="closed" value="true" />

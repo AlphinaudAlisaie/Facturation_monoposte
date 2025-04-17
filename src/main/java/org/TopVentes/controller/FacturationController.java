@@ -31,7 +31,7 @@ public class FacturationController extends Application {
         tabOfFacturation.setContent(fxmlLoader.load());
         root.getTabs().add(tabOfFacturation);
 
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 900, 900);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
