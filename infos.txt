@@ -1,0 +1,18 @@
+Voici les opérations du système:
+
+1- Un comptable peut créer une facture.
+
+2- Un comptable peut entrer les informations suivantes pour la facture en cours de création:
+-> Le nom complet de l'acheteur;
+-> Le total sans taxes (en $, nombre à virgules);
+-> Les taxes applicables au moment de l'achat (en $, nombre à virgules);
+-> Le mode de paiement de l'acheteur (argent, carte de débit et carte de crédit). Dans un futur proche, le système pourrait accepter la carte-cadeau et dans un futur lointain, le système pourrait accepter d'autres modes comme la cryptomonnaie.
+
+3 - Dès que toutes les informations de la facture en cours de création sont bien complétées par le comptable, le total avec taxes (nombre à virgules de deux décimales arrondi au centième supérieur) est automatiquement affiché (autrement, le total avec taxes affiché est le texte «inconnu»).
+4 - Un comptable peut visualiser en tout temps sans effectuer d'action le total des dons de charité du magasin (le total des dons est à zéro au démarrage de l'application lorsqu'aucune facture n'a été créée).
+- Lorsqu'une facture est créée, 
+
+5- une partie de son total avec taxes est ajouté au total des dons de charité de la façon mathématique suivante: total des dons de charité = 
+2 % * (total avec taxes - frais liés au mode de paiement), où les frais liés au mode de paiement sont 0 $ (argent), 
+1 % du montant total avec taxes (carte de débit) et 
+3 % du montant total avec taxes (carte de crédit). Ces frais changent souvent.

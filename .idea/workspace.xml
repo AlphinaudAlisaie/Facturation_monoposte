@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="update component dans workspace .idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/controller/FacturationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/controller/FacturationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -93,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744724173613</updated>
       <workItem from="1744724174683" duration="3953000" />
-      <workItem from="1744892018457" duration="7925000" />
+      <workItem from="1744892018457" duration="8307000" />
     </task>
     <task id="LOCAL-00001" summary="ajout constructeur et attributs">
       <option name="closed" value="true" />
