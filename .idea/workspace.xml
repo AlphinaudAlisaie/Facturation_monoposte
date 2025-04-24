@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="valider montant positif et validernumeroTransaction, calculerMontantDon starter">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDecimalMontant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDecimalMontant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatMontant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatMontant.java" afterDir="false" />
-    </list>
+    <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="avancement methode pour format montant" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +97,7 @@
       <workItem from="1744724174683" duration="3953000" />
       <workItem from="1744892018457" duration="8952000" />
       <workItem from="1745459356373" duration="3663000" />
-      <workItem from="1745496325866" duration="14522000" />
+      <workItem from="1745496325866" duration="14599000" />
     </task>
     <task id="LOCAL-00001" summary="ajout constructeur et attributs">
       <option name="closed" value="true" />
@@ -207,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745502994783</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="avancement methode pour format montant">
+      <option name="closed" value="true" />
+      <created>1745511246326</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1745511246326</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +253,8 @@
     <MESSAGE value="refactoring de variable transsaction pour transaction" />
     <MESSAGE value="ajout couleur de fond et couleur de texte dans le fxml dans Facturation.css" />
     <MESSAGE value="valider montant positif et validernumeroTransaction, calculerMontantDon starter" />
-    <option name="LAST_COMMIT_MESSAGE" value="valider montant positif et validernumeroTransaction, calculerMontantDon starter" />
+    <MESSAGE value="avancement methode pour format montant" />
+    <option name="LAST_COMMIT_MESSAGE" value="avancement methode pour format montant" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
