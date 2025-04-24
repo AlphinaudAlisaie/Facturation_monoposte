@@ -3,6 +3,9 @@ package org.TopVentes.model;
 import java.util.Date;
 
 public class Transaction {
+    private final static double TAUX_POURCENTAGE_FRAIS_CARTE_DEBIT = 0.01;
+    private final static double TAUX_POURCENTAGE_FRAIS_CARTE_CREDIT = 0.03;
+    private final static double TAUX_DECIMAL_CALCUL_DONS = 0.02;
     private MODESPAIEMENT modePaiement;
     private double montantAvantTaxes;
     private String numeroIdentificationCarte;
@@ -10,8 +13,7 @@ public class Transaction {
     private Date dateTransaction;
     private double montantTaxesAvecEcofrais;
 
-    public enum MODESPAIEMENT
-    {
+    public enum MODESPAIEMENT {
         VISA,
         ARGENT_COMPTANT,
         DEBIT
@@ -32,9 +34,9 @@ public class Transaction {
     }
 
     public void setMontantAvantTaxes(double montantAvantTaxes) {
-        if(montantAvantTaxes >=0){
-            this.montantAvantTaxes = montantAvantTaxes;
-        }
+       if(validerMontantPositif(montantAvantTaxes)) {
+           this.montantAvantTaxes = montantAvantTaxes;
+       }
     }
 
     public String getNumeroIdentificationCarte() {
@@ -42,11 +44,9 @@ public class Transaction {
     }
 
     public void setNumeroIdentificationCarte(String numeroIdentificationCarte) {
-
-        if(numeroIdentificationCarte.trim().length() == 16){
+        if (numeroIdentificationCarte.isEmpty() && numeroIdentificationCarte.trim().length() == 16) {
             this.numeroIdentificationCarte = numeroIdentificationCarte;
         }
-
     }
 
     public Date getDateTransaction() {
@@ -62,7 +62,9 @@ public class Transaction {
     }
 
     public void setMontantTaxesAvecEcofrais(double montantTaxesAvecEcofrais) {
-        this.montantTaxesAvecEcofrais = montantTaxesAvecEcofrais;
+        if(validerMontantPositif(montantTaxesAvecEcofrais)){
+            this.montantTaxesAvecEcofrais = montantTaxesAvecEcofrais;
+        }
     }
 
     public MODESPAIEMENT getModePaiement() {
@@ -82,20 +84,58 @@ public class Transaction {
     }
 
     /**
-     * Methode pour calculer total de la facture
-     * @return  total de la facture
+     * Methode pour valider si montant est positif
+     * @param pMontant montant à vérifier
+     * @return vrai si montant est positif
      */
-    public double calculeTotalFacture(){
-        return -1;
+    private boolean validerMontantPositif(double pMontant) {
+        boolean montantValide = false;
+        if (pMontant >= 0) {
+            montantValide = true;
+        }
+        return montantValide;
+    }
+
+    /**
+     *
+     * @param pNumeroTransaction
+     * @return vrai si le format est respecté
+     */
+    private boolean validerNumeroTransaction(String pNumeroTransaction){
+        boolean estValideNumeroTransaction=false;
+
+        return estValideNumeroTransaction;
+    }
+
+    /**
+     * Methode pour calculer total de la facture
+     *
+     * @return total de la facture
+     */
+    public double calculeTotalFacture() {
+        return (montantAvantTaxes + montantTaxesAvecEcofrais);
+    }
+
+    private double calculerMontantFraisModePaiement(){
+        double montantFraisPaiement = 0;
+
+
+
+        return montantFraisPaiement;
     }
 
 
     /**
      * Méthode pour calculer le montant du don du vendeur
+     *
      * @return montant que le vendeur va donner en don
      */
-    public double calculeMontantDonParVendeur(){
-        return -1;
+    public double calculeMontantDonParTransaction() {
+        double montantDonAjouter = TAUX_DECIMAL_CALCUL_DONS * (calculeTotalFacture() - );
+
+
+
+        return montantDonAjouter;
     }
 
 }

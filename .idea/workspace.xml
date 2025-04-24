@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="ajout couleur de fond et couleur de texte dans le fxml dans Facturation.css">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDonnees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/formattageDonnees.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatMontant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Vendeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Vendeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/formattageDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDecimalMontant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1744724174683" duration="3953000" />
       <workItem from="1744892018457" duration="8952000" />
       <workItem from="1745459356373" duration="3663000" />
-      <workItem from="1745496325866" duration="2955000" />
+      <workItem from="1745496325866" duration="6587000" />
     </task>
     <task id="LOCAL-00001" summary="ajout constructeur et attributs">
       <option name="closed" value="true" />
