@@ -1,10 +1,12 @@
 package org.TopVentes.controller;
 
 import javafx.application.Application;
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import org.TopVentes.model.*;
@@ -38,5 +40,18 @@ public class FacturationController extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public void choixPaiement(MouseEvent mouseEvent) {
+        
+    }
+
+    public void argentComptant(Event event) {
+    }
+
+    public void carteDebit(Event event) {
+    }
+
+    public void carteCredit(Event event) {
     }
 }
