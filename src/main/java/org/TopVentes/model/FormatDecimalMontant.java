@@ -1,6 +1,8 @@
 package org.TopVentes.model;
 
-public interface formattageDonnees {
+import java.text.DecimalFormat;
+
+public interface FormatDecimalMontant {
     double determineNombreChiffreApresVirgules(double pMontant);
 
 }
