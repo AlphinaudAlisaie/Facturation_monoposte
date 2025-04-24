@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="ajout couleur de fond et couleur de texte dans le fxml dans Facturation.css">
+    <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="valider montant positif et validernumeroTransaction, calculerMontantDon starter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatMontant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Acheteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Acheteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDecimalMontant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDecimalMontant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatMontant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatMontant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/formattageDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/TopVentes/model/FormatDecimalMontant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1744724174683" duration="3953000" />
       <workItem from="1744892018457" duration="8952000" />
       <workItem from="1745459356373" duration="3663000" />
-      <workItem from="1745496325866" duration="6587000" />
+      <workItem from="1745496325866" duration="11295000" />
     </task>
     <task id="LOCAL-00001" summary="ajout constructeur et attributs">
       <option name="closed" value="true" />
@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745498305957</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="valider montant positif et validernumeroTransaction, calculerMontantDon starter">
+      <option name="closed" value="true" />
+      <created>1745502994783</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745502994783</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +250,8 @@
     <MESSAGE value="ajout info acheteur" />
     <MESSAGE value="refactoring de variable transsaction pour transaction" />
     <MESSAGE value="ajout couleur de fond et couleur de texte dans le fxml dans Facturation.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout couleur de fond et couleur de texte dans le fxml dans Facturation.css" />
+    <MESSAGE value="valider montant positif et validernumeroTransaction, calculerMontantDon starter" />
+    <option name="LAST_COMMIT_MESSAGE" value="valider montant positif et validernumeroTransaction, calculerMontantDon starter" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

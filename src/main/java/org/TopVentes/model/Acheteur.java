@@ -2,15 +2,15 @@ package org.TopVentes.model;
 
 public class Acheteur {
     private final static String PAYS = "Canada";
-    private String nomFamile;
+    private String nomFamille;
     private String prenom;
     private int numeroCivic;
     private String nomRue;
     private String nomProvince;
     private String adressePostale;
 
-    public Acheteur(String nomFamile, String prenom, int numeroCivic, String nomRue, String nomProvince, String adressePostale) {
-        this.nomFamile = nomFamile;
+    public Acheteur(String nomFamille, String prenom, int numeroCivic, String nomRue, String nomProvince, String adressePostale) {
+        this.nomFamille = nomFamille;
         this.prenom = prenom;
         this.numeroCivic = numeroCivic;
         this.nomRue = nomRue;
@@ -21,12 +21,12 @@ public class Acheteur {
     public Acheteur() {
     }
 
-    public String getNomFamile() {
-        return nomFamile;
+    public String getNomFamille() {
+        return nomFamille;
     }
 
-    public void setNomFamile(String nomFamile) {
-        this.nomFamile = nomFamile;
+    public void setNomFamille(String nomFamille) {
+        this.nomFamille = nomFamille;
     }
 
     public String getPrenom() {
@@ -68,4 +68,24 @@ public class Acheteur {
     public void setAdressePostale(String adressePostale) {
         this.adressePostale = adressePostale;
     }
+
+
+    /**
+     * Methode pour valider le prenom
+     * @return vrai si le prénom a au moins 3 lettres
+     */
+    private boolean validerPrenom(){
+        return prenom.trim().length() >= 3;
+    }
+
+    /**
+     * Methode pour valider le nom de famille
+     * @return vrai si le nomFamille est valide
+     */
+    private boolean validerNom(){
+        return nomFamille.trim().length()>=2;
+    }
+
+
+
 }

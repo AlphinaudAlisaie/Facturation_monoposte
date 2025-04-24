@@ -97,8 +97,8 @@ public class Transaction {
     }
 
     /**
-     *
-     * @param pNumeroTransaction
+     * Methode pour valider numero de la transaction
+     * @param pNumeroTransaction string de nombre
      * @return vrai si le format est respecté
      */
     private boolean validerNumeroTransaction(String pNumeroTransaction){
@@ -131,11 +131,7 @@ public class Transaction {
      * @return montant que le vendeur va donner en don
      */
     public double calculeMontantDonParTransaction() {
-        double montantDonAjouter = TAUX_DECIMAL_CALCUL_DONS * (calculeTotalFacture() - );
-
-
-
-        return montantDonAjouter;
+        return (TAUX_DECIMAL_CALCUL_DONS * (calculeTotalFacture() - calculerMontantFraisModePaiement()));
     }
 
 }
