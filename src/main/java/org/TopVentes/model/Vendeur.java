@@ -3,11 +3,11 @@ package org.TopVentes.model;
 public class Vendeur {
     private final String NOM_COMPAGNIE = "TopVentes";
     private final String ADRESSE_COMPAGNIE = "456 rue Christophe (Québec, Québec, Canada) J0Z 1H0";
-    private double totalDons;
+    private double soldeDons;
 
     //constructeur
     public Vendeur() {
-        totalDons = 0;
+        soldeDons = 0;
     }
 
 
@@ -27,14 +27,24 @@ public class Vendeur {
         return ADRESSE_COMPAGNIE;
     }
 
-    public double getTotalDons() {
-        return totalDons;
+    public double getSoldeDons() {
+        return soldeDons;
     }
 
-    public void setTotalDons(double totalDons) {
-       if(totalDons>=0){
-           this.totalDons = totalDons;
+    public void setSoldeDons(double soldeDons) {
+       if(soldeDons >=0){
+           this.soldeDons = soldeDons;
        }
+    }
+
+    /**
+     *
+     * @param pMontantDonAjoute montant de dons à ajouter au solde
+     * @return nouveau solde de dons
+     */
+    public double augmenteSoldeDons(double pMontantDonAjoute){
+
+        return -1;
     }
 
 }
