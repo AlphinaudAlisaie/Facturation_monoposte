@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
@@ -16,18 +16,24 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="789.0" prefWidth="898.0">
                <children>
                   <Label layoutX="34.0" layoutY="21.0" prefHeight="53.0" prefWidth="184.0" text="TopVentes" />
+                  <Label layoutX="34.0" layoutY="66.0" prefHeight="25.0" prefWidth="164.0" text="adresse entreprise" />
+                  <Label layoutX="34.0" layoutY="116.0" text="Acheteur" />
+                  <Label layoutX="34.0" layoutY="151.0" text="Prenom" />
+                  <Label layoutX="34.0" layoutY="184.0" text="Nom" />
+                  <Label layoutX="34.0" layoutY="221.0" text="Adresse" />
+                  <Label layoutX="655.0" layoutY="66.0" prefHeight="17.0" prefWidth="231.0" text="Date" />
                   <DatePicker layoutX="649.0" layoutY="99.0" prefHeight="67.0" prefWidth="235.0" />
-                  <SplitMenuButton id="modePaiement" layoutX="508.0" layoutY="231.0" mnemonicParsing="false" text="Mode de paiement">
+                  <SplitMenuButton layoutX="696.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#choixPaiement" styleClass="modePaiement" text="Mode de paiement">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Argent comptant" />
-                      <MenuItem mnemonicParsing="false" text="Carte débit" />
-                        <MenuItem mnemonicParsing="false" text="Carte crédit" />
+                      <MenuItem id="argentComptant" mnemonicParsing="false" onMenuValidation="#argentComptant" styleClass="modePaiement" text="Argent comptant" />
+                      <MenuItem id="debit" mnemonicParsing="false" onMenuValidation="#carteDebit" styleClass="modePaiement" text="Carte débit" />
+                        <MenuItem mnemonicParsing="false" onMenuValidation="#carteCredit" styleClass="modePaiement" text="Carte crédit" />
                     </items>
                   </SplitMenuButton>
-                  <ChoiceBox layoutX="698.0" layoutY="231.0" prefWidth="150.0" />
                   <Button layoutX="397.0" layoutY="675.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" text="Enregistrer" />
-                  <Label layoutX="34.0" layoutY="116.0" text="Acheteur" />
-                  <Label layoutX="34.0" layoutY="66.0" prefHeight="25.0" prefWidth="164.0" text="adresse entreprise" />
+                  <TextField layoutX="210.0" layoutY="147.0" text="Veuillez entrer le prénom" />
+                  <TextField layoutX="210.0" layoutY="180.0" text="Veuillez entrer le nom" />
+                  <TextField layoutX="210.0" layoutY="217.0" text="Veuillez entrer adresse" />
                </children>
             </AnchorPane>
         </content>
