@@ -3,14 +3,12 @@ package org.TopVentes.model;
 import java.util.Date;
 
 public class Transaction {
-    public final static double POURCENTAGE_EN_DECIMAL_TPS = 0.05;
-    public final static double POURCENTAGE_EN_DECIMAL_TVQ = 0.09975;
     private MODESPAIEMENT modePaiement;
     private double montantAvantTaxes;
     private String numeroIdentificationCarte;
     private String numeroTransaction;
     private Date dateTransaction;
-    private double montantEcofrais;
+    private double montantTaxesAvecEcofrais;
 
     public enum MODESPAIEMENT
     {
@@ -19,34 +17,69 @@ public class Transaction {
         DEBIT
     }
 
-
-
-    //constructeur
+    //constructeur avec parametres
     public Transaction(MODESPAIEMENT pModePaiement, String numeroIdentificationCarte) {
         this.modePaiement = pModePaiement;
         this.numeroIdentificationCarte = numeroIdentificationCarte;
     }
 
+    //constructeur par defaut
     public Transaction() {
     }
 
-    /**
-     * Methode calcule montant TPS
-     * @return montant TPS
-     */
-    private double calculeMontantTPS(){
-        return -1;
+    public double getMontantAvantTaxes() {
+        return montantAvantTaxes;
     }
 
-
-    /**
-     * Methode calcule montant TVQ
-     * @return
-     */
-    private double calculeMontantTVQ(){
-        return -1;
+    public void setMontantAvantTaxes(double montantAvantTaxes) {
+        if(montantAvantTaxes >=0){
+            this.montantAvantTaxes = montantAvantTaxes;
+        }
     }
 
+    public String getNumeroIdentificationCarte() {
+        return numeroIdentificationCarte;
+    }
+
+    public void setNumeroIdentificationCarte(String numeroIdentificationCarte) {
+
+        if(numeroIdentificationCarte.trim().length() == 16){
+            this.numeroIdentificationCarte = numeroIdentificationCarte;
+        }
+
+    }
+
+    public Date getDateTransaction() {
+        return dateTransaction;
+    }
+
+    public void setDateTransaction(Date dateTransaction) {
+        this.dateTransaction = dateTransaction;
+    }
+
+    public double getMontantTaxesAvecEcofrais() {
+        return montantTaxesAvecEcofrais;
+    }
+
+    public void setMontantTaxesAvecEcofrais(double montantTaxesAvecEcofrais) {
+        this.montantTaxesAvecEcofrais = montantTaxesAvecEcofrais;
+    }
+
+    public MODESPAIEMENT getModePaiement() {
+        return modePaiement;
+    }
+
+    public void setModePaiement(MODESPAIEMENT modePaiement) {
+        this.modePaiement = modePaiement;
+    }
+
+    public String getNumeroTransaction() {
+        return numeroTransaction;
+    }
+
+    public void setNumeroTransaction(String numeroTransaction) {
+        this.numeroTransaction = numeroTransaction;
+    }
 
     /**
      * Methode pour calculer total de la facture
