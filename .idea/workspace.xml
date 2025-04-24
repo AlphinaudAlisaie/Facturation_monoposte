@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abc8a0fb-504b-480f-b644-a7435e6c287b" name="Changes" comment="update component dans workspace .idea">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/TopVentes/controller/FacturationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Facturation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Facturation.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,27 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FacturationController.executor": "Run",
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1239654/Documents/GitHub/Facturation_monoposte",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FacturationController.executor&quot;: &quot;Run&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1239654/Documents/GitHub/Facturation_monoposte&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.TopVentes.model" />
@@ -98,7 +98,7 @@
       <updated>1744724173613</updated>
       <workItem from="1744724174683" duration="3953000" />
       <workItem from="1744892018457" duration="8952000" />
-      <workItem from="1745459356373" duration="677000" />
+      <workItem from="1745459356373" duration="2898000" />
     </task>
     <task id="LOCAL-00001" summary="ajout constructeur et attributs">
       <option name="closed" value="true" />
@@ -140,7 +140,39 @@
       <option name="project" value="LOCAL" />
       <updated>1744728100629</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ajout contenu fxml">
+      <option name="closed" value="true" />
+      <created>1745461139175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745461139175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ajout classe test">
+      <option name="closed" value="true" />
+      <created>1745461155072</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745461155072</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ajout methode pour paiement">
+      <option name="closed" value="true" />
+      <created>1745462344821</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745462344821</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ajout methode pour paiement">
+      <option name="closed" value="true" />
+      <created>1745462356022</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745462356022</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +207,10 @@
     <MESSAGE value="ajout contenu dans controller" />
     <MESSAGE value="update sans grosse modification" />
     <MESSAGE value="update component dans workspace .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="update component dans workspace .idea" />
+    <MESSAGE value="ajout contenu fxml" />
+    <MESSAGE value="ajout classe test" />
+    <MESSAGE value="ajout methode pour paiement" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout methode pour paiement" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -17,12 +17,15 @@
                <children>
                   <Label layoutX="34.0" layoutY="21.0" prefHeight="53.0" prefWidth="184.0" text="TopVentes" />
                   <Label layoutX="34.0" layoutY="66.0" prefHeight="25.0" prefWidth="164.0" text="adresse entreprise" />
+                  <DatePicker fx:id="date" layoutX="649.0" layoutY="99.0" prefHeight="67.0" prefWidth="235.0" />
                   <Label layoutX="34.0" layoutY="116.0" text="Acheteur" />
                   <Label layoutX="34.0" layoutY="151.0" text="Prenom" />
+                  <TextField fx:id="prenom" layoutX="210.0" layoutY="147.0" text="Veuillez entrer le prénom" />
                   <Label layoutX="34.0" layoutY="184.0" text="Nom" />
+                  <TextField fx:id="nom" layoutX="210.0" layoutY="180.0" text="Veuillez entrer le nom" />
                   <Label layoutX="34.0" layoutY="221.0" text="Adresse" />
+                  <TextField fx:id="adresseAcheteur" layoutX="210.0" layoutY="217.0" text="Veuillez entrer adresse" />
                   <Label layoutX="655.0" layoutY="66.0" prefHeight="17.0" prefWidth="231.0" text="Date" />
-                  <DatePicker layoutX="649.0" layoutY="99.0" prefHeight="67.0" prefWidth="235.0" />
                   <SplitMenuButton layoutX="696.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#choixPaiement" styleClass="modePaiement" text="Mode de paiement">
                     <items>
                       <MenuItem id="argentComptant" mnemonicParsing="false" onMenuValidation="#argentComptant" styleClass="modePaiement" text="Argent comptant" />
@@ -30,10 +33,7 @@
                         <MenuItem mnemonicParsing="false" onMenuValidation="#carteCredit" styleClass="modePaiement" text="Carte crédit" />
                     </items>
                   </SplitMenuButton>
-                  <Button layoutX="397.0" layoutY="675.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" text="Enregistrer" />
-                  <TextField layoutX="210.0" layoutY="147.0" text="Veuillez entrer le prénom" />
-                  <TextField layoutX="210.0" layoutY="180.0" text="Veuillez entrer le nom" />
-                  <TextField layoutX="210.0" layoutY="217.0" text="Veuillez entrer adresse" />
+                  <Button fx:id="enregistrer" layoutX="397.0" layoutY="675.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="144.0" text="Enregistrer" />
                </children>
             </AnchorPane>
         </content>
