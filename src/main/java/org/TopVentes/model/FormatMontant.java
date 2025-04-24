@@ -8,17 +8,14 @@ import java.text.NumberFormat;
 public class FormatMontant implements FormatDecimalMontant {
 
     /**
-     * Methode pour determiner le format d'un montant
-     *
-     * @param pMontant à respecter le format
-     * @return format correctement
+     * Methode pour créer le format montant
+     * @param pMontant en param
+     * @return le format décimal désiré
      */
-    @Override
-    public double determineNombreChiffreApresVirgules(String pMontant) {
-        if(verifierStringIsDouble(pMontant))
-
-        return -1;
+    public DecimalFormat creerFormatMontant(double pMontant){
+        return new DecimalFormat("#.##");
     }
+
 
     /**
      * Methode pour vérifier si le String est un double
@@ -30,13 +27,29 @@ public class FormatMontant implements FormatDecimalMontant {
         boolean isDouble= false;
         try{
             Double doubleNumber = Double.valueOf(pEntree);
-            isDouble = true;
+            if(doubleNumber >=0.00){
+                isDouble = true;
+            }
+
         }catch (NumberFormatException e){
             System.out.println("L'entree en String n'est pas un nombre double!");
         }catch(Exception ex){
             ex.printStackTrace();
         }
         return isDouble;
+    }
+
+    /**
+     * Methode servant
+     * @param pMontant string entree par utilisateur
+     * @return pMontant en tant que double
+     */
+    public double changerStringToDouble(String pMontant){
+        double number=0;
+        if(verifierStringIsDouble(pMontant)){
+            number = Double.parseDouble(pMontant);
+        }
+        return number;
     }
 
 
